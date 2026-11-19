@@ -6,33 +6,33 @@
 <title>Director Of Photography | Rhea Kapoor</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&family=Poppins:wght@200;600&family=Overlock:wght@400&family=Questrial&display=swap" rel="stylesheet">
 <style>
-:root{--black:#000;--red:#e8333a;--white:#fff;--grey:#bdbdbd;--dark:#151515}
+:root{--black:#000;--red:#ff4040;--white:#fff;--grey:#939393;--dark:#141414}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--black);color:var(--white);font-family:Raleway,"Helvetica Neue",Arial,sans-serif;font-weight:300;line-height:1.7}
+body{background:var(--black);color:var(--white);font-family:Overlock,"Helvetica Neue",Arial,sans-serif;font-weight:400;font-size:18px;line-height:1.5}
 a{color:inherit;text-decoration:none}
 .ph{overflow:hidden;background:#2b2b2b;color:#777;display:flex;align-items:center;justify-content:center;font-size:12px;width:100%;position:relative}
 .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 .light .ph{background:#e4e4e4;color:#999}
-h1,h2,h3{font-weight:200;line-height:1.1}
-h2.big{font-size:clamp(40px,7vw,96px);margin-bottom:10px}
-h3.sub{font-size:clamp(20px,2.4vw,30px);color:var(--grey);margin-bottom:30px}
+h1,h3{font-family:Jost,"Futura",sans-serif;font-weight:300;line-height:1.1}h2{font-family:Poppins,sans-serif;font-weight:200;line-height:1.1}
+h2.big{font-size:clamp(40px,5.5vw,64px);margin-bottom:10px}
+h3.sub{font-size:clamp(22px,2.4vw,33px);color:var(--white);margin-bottom:30px}
 .red{color:var(--red)}
-.tag{display:inline-block;background:var(--red);font-size:11px;font-weight:400;letter-spacing:.5px;padding:3px 10px;margin-bottom:12px;text-transform:uppercase}
+.tag{display:inline-block;font-family:Questrial,sans-serif;font-size:13px;letter-spacing:.4em;padding-left:10px;border-left:2px solid var(--red);margin-bottom:12px;text-transform:uppercase;color:#fff}
 /* header */
 header{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;align-items:center;gap:30px;padding:12px 4vw;background:linear-gradient(#000c,#0000)}
-.logo{font-size:18px;font-weight:600;line-height:1.1;letter-spacing:1px}.logo i{font-style:normal;font-weight:200;color:var(--red);display:block}
+.logo{font-family:Poppins,sans-serif;font-size:18px;font-weight:600;line-height:1.1;letter-spacing:1px}.logo i{font-style:normal;font-weight:200;color:var(--red);display:block}
 .soc{display:flex;gap:10px;font-size:11px;color:var(--grey)}
-nav{margin-left:auto;display:flex;gap:26px;font-size:13px}
+nav{margin-left:auto;display:flex;gap:26px;font-size:14px;font-family:Questrial,sans-serif;letter-spacing:.05em}
 nav a:hover,.soc a:hover{color:var(--red)}
-.tab{position:fixed;top:30vh;z-index:15;writing-mode:vertical-rl;font-size:12px;padding:14px 7px;letter-spacing:1px}
+.tab{font-family:Questrial,sans-serif;position:fixed;top:30vh;z-index:15;writing-mode:vertical-rl;font-size:12px;padding:14px 7px;letter-spacing:1px}
 .tab.l{left:0;background:var(--red)}.tab.r{right:0;background:#111;border:1px solid #333}
 /* hero */
 .hero{min-height:100vh;display:grid;grid-template-columns:1.1fr 1fr;align-items:end}
 .hero .txt{padding:0 4vw 14vh 6vw}
-.hero h1{font-size:clamp(56px,10vw,150px);color:var(--red)}
+.hero h1{font-size:clamp(56px,9vw,130px);color:var(--red);font-family:Jost,sans-serif;font-weight:300}
 .hero h1 span{color:var(--white);display:block}
 .hero h5{font-weight:300;font-size:16px;margin-top:20px}
 .hero .ph{height:100vh}
@@ -46,16 +46,16 @@ section{padding:110px 6vw}
 .exp{display:grid;grid-template-columns:260px 1fr;gap:5vw;margin-bottom:90px;align-items:start}
 .exp:nth-of-type(even){grid-template-columns:1fr 260px}.exp:nth-of-type(even) .ph{order:2}
 .exp .ph{aspect-ratio:3/4}
-.exp h4{font-weight:300;font-size:26px;margin-bottom:12px}
-.exp p{color:#cfcfcf;max-width:70ch;font-size:15px;margin-bottom:12px}
+.exp h4{font-family:Poppins,sans-serif;font-weight:600;font-size:24px;margin-bottom:12px}
+.exp p{color:#e8e6e6;max-width:70ch;font-size:16px;margin-bottom:12px}
 .more{display:inline-block;margin-top:8px;font-size:13px;border-bottom:1px solid var(--red)}
 /* showreel */
 .reel{position:relative;height:70vh;display:flex;align-items:flex-end;padding:0 6vw 7vh}
 .reel .ph{position:absolute;inset:0;height:100%;opacity:.55}
 .reel div.c{position:relative}
 .reel small{font-size:13px;color:var(--grey)}
-.reel h3{font-size:clamp(26px,4vw,52px);margin:4px 0 14px}
-.play{display:inline-flex;align-items:center;gap:10px;font-size:13px}
+.reel h3{font-size:clamp(26px,3.6vw,50px);margin:4px 0 14px}
+.play{font-family:Questrial,sans-serif;letter-spacing:.2em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px;font-size:13px}
 .play b{width:38px;height:38px;border:1px solid #fff;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:400}
 .play:hover b{background:var(--red);border-color:var(--red)}
 /* light sections */
@@ -63,13 +63,13 @@ section{padding:110px 6vw}
 .light h2.big{color:#111}
 .light h2.big em{font-style:normal;display:block;font-size:.5em;color:var(--red)}
 .cat{display:grid;grid-template-columns:200px 1fr;gap:30px;margin-bottom:60px}
-.cat h4{font-size:30px;font-weight:200;color:#888}
-.cat h4 small{display:block;font-size:12px;color:var(--red);font-weight:400}
+.cat h4{font-family:Poppins,sans-serif;font-size:28px;font-weight:200;color:#626262}
+.cat h4 small{display:block;font-family:Questrial,sans-serif;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--red);font-weight:400}
 .scroll{display:flex;gap:18px;overflow-x:auto;padding-bottom:12px}
 .vid{flex:0 0 220px}
 .vid .ph{aspect-ratio:16/9}
 .vid .ph:after{content:"▶";position:absolute;color:#fff;background:#0008;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-size:11px}
-.vid h5{font-size:13px;font-weight:600;margin-top:8px;line-height:1.35}
+.vid h5{font-family:Poppins,sans-serif;font-size:13px;font-weight:600;margin-top:8px;line-height:1.35}
 .vid p{font-size:12px;color:#777}
 .filter{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 50px}
 .filter a{border:1px solid #bbb;border-radius:30px;padding:3px 16px;font-size:12px}
@@ -80,7 +80,7 @@ section{padding:110px 6vw}
 .queue .vid{flex:none;display:grid;grid-template-columns:110px 1fr;gap:10px;margin-bottom:12px}
 .press{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:34px}
 .press .ph{aspect-ratio:1/1.1;margin-bottom:14px}
-.press h5{font-size:18px;font-weight:300;line-height:1.3;margin-bottom:8px}
+.press h5{font-family:Poppins,sans-serif;font-size:17px;font-weight:200;line-height:1.3;margin-bottom:8px}
 .press p{font-size:13px;color:#666}
 .press a{color:var(--red);font-size:13px}
 /* contact */
@@ -111,17 +111,16 @@ footer{padding:30px 6vw;border-top:1px solid #222;display:flex;justify-content:s
 </div>
 
 <section class="intro">
-  <div><h2 class="big">Let’s meet<br>the real me</h2></div>
-  <p>With a decade of experience in the film industry, I am a dedicated cinematographer passionate about capturing the essence of stories through the lens. Based in Kolkata and Mumbai, I actively seek collaborations with creative individuals to bring innovative and impactful visuals to life. My commitment to pushing creative boundaries and embracing challenges has allowed me to evolve as an artist and contribute to the cinematic landscape.</p>
+  <div><h2 class="big">Let’s meet the <span class="red">real</span> me</h2></div>
+  <p>“With a decade of experience in the film industry, I am a dedicated cinematographer passionate about capturing the essence of stories through the lens. Based in Kolkata and Mumbai, I actively seek collaborations with creative individuals to bring innovative and impactful visuals to life. Since my career began in 2017, I have had the privilege of working on diverse projects across various genres. My commitment to pushing creative boundaries and embracing challenges has allowed me to evolve as an artist and contribute to the cinematic landscape.”</p>
 </section>
 
 <section class="about" id="about">
   <div class="ph"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div>
   <div>
     <h2 class="big">About Rhea</h2>
-    <h3 class="sub">How it all started</h3>
-    <p>A distinguished cinematographer with a prolific career spanning over a decade, Rhea Kapoor has made significant contributions to the Indian film industry. She holds a degree in Cinematography from a leading film institute and is a member of the Indian Society of Cinematographers (ISC) and other cinematographers’ collectives.</p>
-    <p>With a portfolio spanning over 30 short films, TV commercials, documentaries, corporate films and feature films, her work encompasses a diverse range of genres and styles. Her projects have earned multiple awards at national and international film festivals, and she is committed to advancing gender inclusion in the technical aspects of filmmaking.</p>
+    <h3 class="sub">How it all st<span class="red">a</span>r<span class="red">t</span>ed</h3>
+    <p>A distinguished cinematographer with a prolific career spanning over a decade, Rhea Kapoor has made significant contributions to the Indian film industry. She holds a degree in Cinematography from a leading film and television institute and is a member of the Indian Society of Cinematographers (ISC) and other cinematographers’ collectives. With a portfolio spanning over 30 short films, TV commercials, documentaries, corporate films, and feature films, her work encompasses a diverse range of genres and styles.</p><p>Her projects have received both critical and commercial acclaim, earning multiple awards at national and international film festivals. She is committed to advancing gender inclusion in the technical aspects of filmmaking, inspiring the next generation of women professionals in the industry.</p>
   </div>
 </section>
 
@@ -129,12 +128,12 @@ footer{padding:30px 6vw;border-top:1px solid #222;display:flex;justify-content:s
   <h2 class="big">Experience</h2>
   <h3 class="sub">Awards and Accolades</h3>
 
-  <div class="exp"><div class="ph"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><div><span class="tag">Award</span><h4>Honorary Membership &amp; Grand Progress Award</h4><p>Placeholder text for an international photography honour awarded for outstanding contribution to art photography.</p></div></div>
-  <div class="exp"><div class="ph"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><div><span class="tag">Experience</span><h4>Asian Film Academy</h4><p>Was a fellow of the academy, an educational programme hosted by an international film festival to foster young Asian talents and build their networks across Asia. Fellows take part in short film production, workshops and master classes.</p><p>Placeholder text continues here describing the programme, participants and screenings.</p></div></div>
-  <div class="exp"><div class="ph"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><div><span class="tag">Award</span><h4>Excellence in Cinematography</h4><p>Special Encouragement Award, 2019. Placeholder text describing the ceremony and what the recognition means for young and upcoming cinematographers.</p></div></div>
-  <div class="exp"><div class="ph"><img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><div><span class="tag">Experience</span><h4>Youth Film Project</h4><p>Participated as part of the Indian team in a global youth film project. Travelled abroad and directed, shot, edited and produced a short documentary in an 18 day time frame.</p></div></div>
-  <div class="exp"><div class="ph"><img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><div><span class="tag">Experience</span><h4>Talents Summit 2023</h4><p>A talent summit and networking programme of a major international film festival, bringing together 200 outstanding creatives from film and drama series each year.</p></div></div>
-  <div class="exp"><div class="ph"><img src="https://images.unsplash.com/photo-1519183071298-a2962be90b8e?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><div><span class="tag">Award</span><h4>Honoured at Regional Awards 2024</h4><p>Honoured in 2024 in recognition of significant contributions to the fields of arts and culture.</p><a class="more" href="#mentions">Read More</a></div></div>
+  <div class="exp"><div class="ph"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><div><span class="tag">Award</span><h4>Grand Progress Award</h4><p>Honorary Membership for the Outstanding Contribution to International Art Photography, and the Grand Progress Award by an international federation of photographic art.</p></div></div>
+  <div class="exp"><div class="ph"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><div><span class="tag">Experience</span><h4>Asian Film Academy</h4><p>Was a fellow of AFA 2015. Asian Film Academy (AFA) is an educational program hosted by Busan International Film Festival, Dongseo University and Busan Film Commission to foster young Asian talents and build their networks throughout Asia. The fellows participate in various programs, including short film production, workshops, and master classes, and the two short films they complete are officially presented at the Busan International Film Festival.</p><p>Placeholder text continues here describing the programme, participants and screenings.</p></div></div>
+  <div class="exp"><div class="ph"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><div><span class="tag">Award</span><h4>Pierre Angénieux ExcelLens in Cinematography</h4><p>Special Encouragement Award, Cannes 2019. The Pierre Angénieux ExcelLens in Cinematography ceremony at the Festival de Cannes recognised the work of young and upcoming cinematographer Rhea Kapoor, making her the first Indian — and first Indian woman — to be recognised in this category.</p></div></div>
+  <div class="exp"><div class="ph"><img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><div><span class="tag">Experience</span><h4>Looking China Youth Film Project</h4><p>Participated as part of the Looking China 2015 Youth Film Project, representing India. Travelled to China and directed, shot, edited and produced a short documentary in an 18 day time frame; the film received the 2nd Runner up award. Was part of the 10 member Indian team among 100 filmmakers from all over the globe.</p></div></div>
+  <div class="exp"><div class="ph"><img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><div><span class="tag">Experience</span><h4>Berlinale Talents 2023</h4><p>Berlinale Talents is the talent summit and networking programme of the Berlin International Film Festival. An annual platform for 200 outstanding creatives from the fields of film and drama series, it is one of the biggest talent summits in the world, supporting participants in positioning themselves in the filmmaking industry.</p></div></div>
+  <div class="exp"><div class="ph"><img src="https://images.unsplash.com/photo-1519183071298-a2962be90b8e?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><div><span class="tag">Award</span><h4>Honoured at Sera Bangali Awards 2024</h4><p>Rhea Kapoor, a skilled cinematographer, was honoured in 2024, recognizing her significant contributions to the fields of arts and culture. Her work has consistently impressed both audiences and critics, earning her accolades at numerous national and international film festivals.</p><a class="more" href="#mentions">Read More</a></div></div>
 </section>
 
 <section id="showreel" style="padding:0">
@@ -149,27 +148,27 @@ footer{padding:30px 6vw;border-top:1px solid #222;display:flex;justify-content:s
   <div class="filter"><a href="#">Short Films</a><a href="#">Corporate Films</a><a href="#">Adverts</a><a href="#">Feature Films</a><a href="#">Web Series</a><a href="#">Music Videos</a></div>
 
   <div class="cat"><h4>Short Films<small>All Categories</small></h4><div class="scroll">
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Short Film Title</h5><p>00:00</p></div>
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Short Film Title</h5><p>00:00</p></div>
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Short Film Title</h5><p>00:00</p></div>
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Short Film Title</h5><p>00:00</p></div>
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Short Film Title</h5><p>00:00</p></div></div></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Short Film Title</h5><p>30:22</p></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Short Film Title</h5><p>01:00</p></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Short Film Title</h5><p>01:00</p></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Short Film Title</h5><p>02:02</p></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Short Film Title</h5><p>01:00</p></div></div></div>
   <div class="cat"><h4>Feature Films &amp; Web Series<small>All Categories</small></h4><div class="scroll">
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Feature Film | Official Trailer</h5><p>00:00</p></div>
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Web Series | Official Trailer</h5><p>00:00</p></div>
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Feature Film | Official Teaser</h5><p>00:00</p></div>
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Web Series | Official Trailer</h5><p>00:00</p></div></div></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Feature Film | Official Trailer</h5><p>00:50</p></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Web Series | Official Trailer</h5><p>07:07</p></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Feature Film | Official Teaser</h5><p>15:15</p></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Web Series | Official Trailer</h5><p>03:03</p></div></div></div>
   <div class="cat"><h4>Corporate Films &amp; Adverts<small>All Categories</small></h4><div class="scroll">
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Brand TVC Title</h5><p>00:00</p></div>
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Brand TVC Title</h5><p>00:00</p></div>
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Corporate Film Title</h5><p>00:00</p></div>
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Brand TVC Title</h5><p>00:00</p></div>
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Brand TVC Title</h5><p>00:00</p></div></div></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Brand TVC Title</h5><p>00:48</p></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Brand TVC Title</h5><p>03:00</p></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Corporate Film Title</h5><p>02:17</p></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Brand TVC Title</h5><p>01:30</p></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Brand TVC Title</h5><p>02:00</p></div></div></div>
   <div class="cat"><h4>Music Videos<small>All Categories</small></h4><div class="scroll">
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Song Title | Artist</h5><p>00:00</p></div>
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Song Title | Artist</h5><p>00:00</p></div>
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Song Title | Artist</h5><p>00:00</p></div>
-    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Song Title | Artist</h5><p>00:00</p></div></div></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Song Title | Artist</h5><p>01:00</p></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Song Title | Artist</h5><p>03:30</p></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Song Title | Artist</h5><p>02:45</p></div>
+    <div class="vid"><div class="ph"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=85" alt="Cinematography still" loading="lazy"></div><h5>Song Title | Artist</h5><p>04:10</p></div></div></div>
 </section>
 
 <section class="light" id="mentions" style="padding-top:0">
