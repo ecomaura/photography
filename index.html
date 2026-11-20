@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jayantha Sinha Filmmaker</title>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300&family=Poppins:wght@500;600&family=Playfair+Display&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300&family=Poppins:wght@500;600&family=Playfair+Display&family=Questrial&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
 <style>
 :root{--red:#ff3b3b;--grey:#b9b9b9}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -40,6 +40,26 @@ nav a.on{color:var(--red)}
  .apic{min-height:50vh}
  .photo{max-height:40vh;aspect-ratio:auto;height:40vh}
 }
+
+.story,.exp{position:relative;z-index:2;margin-left:44px;background:#000;color:#fff;overflow:hidden}
+.story{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:140px 80px 80px 0}
+.story .pic{height:78vh;min-height:420px;background:url(story.jpg) center/cover,linear-gradient(160deg,#6a2c22,#c4704a 60%,#f1c48d)}
+.kicker{font-family:'Jost',sans-serif;font-weight:300;color:var(--red);font-size:clamp(18px,1.6vw,26px);text-align:right}
+.story h2,.exp h2{font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(34px,4vw,64px);line-height:1.1}
+.story h2{text-align:right;margin-bottom:56px}
+.body{font-family:'Questrial',sans-serif;font-size:clamp(14px,1.05vw,17px);line-height:1.7;text-align:justify;color:#eee}
+.exp{padding:120px 80px 140px 100px}
+.exp .kicker{text-align:left}
+.exp h2{margin-bottom:96px}
+.row{display:grid;grid-template-columns:minmax(240px,320px) 1fr;gap:72px;align-items:center;margin-bottom:140px;max-width:1100px}
+.row:last-child{margin-bottom:0}
+.row .img{position:relative;aspect-ratio:3/4;background:linear-gradient(160deg,#3a1414,#9b4a3a 60%,#d99a6a)}
+.card{position:absolute;left:18%;right:-12%;bottom:-8%;background:var(--red);color:#fff;text-align:center;padding:28px 16px;font-family:'Questrial',sans-serif}
+.card small{display:block;font-size:12px;letter-spacing:3px;margin-bottom:10px}
+.card b{font-weight:400;font-size:clamp(18px,1.6vw,26px);font-family:'Jost',sans-serif}
+.row .body{will-change:transform}
+.row .img,.story .pic,.story .sbody{will-change:transform}
+@media(max-width:900px){.story{grid-template-columns:1fr;padding:120px 20px 48px 24px;gap:32px}.story .pic{height:50vh}.exp{padding:80px 20px 80px 24px}.row{grid-template-columns:1fr;gap:48px;margin-bottom:96px}.card{right:0;left:12%}}
 </style>
 </head>
 <body>
@@ -70,12 +90,41 @@ nav a.on{color:var(--red)}
  </div>
  <div class="apic" role="img" aria-label="Jayantha Sinha on set"></div>
 </section>
+<section class="story" id="story">
+ <div class="pic" role="img" aria-label="Jayantha Sinha"></div>
+ <div class="sbody">
+  <p class="kicker">About Jayantha</p>
+  <h2>How it all started</h2>
+  <p class="body">Placeholder text: introduce your background here. Describe your training, how you got into cinematography, the kinds of projects you shoot, and the organisations you are part of. Replace this paragraph with your own story.</p>
+ </div>
+</section>
+<section class="exp" id="experience">
+ <p class="kicker">Experience</p>
+ <h2>Awards and Accolades</h2>
+ <div class="row">
+  <div class="img" data-speed="0.08"><div class="card"><small>EXPERIENCE</small><b>Experience One</b></div></div>
+  <p class="body" data-speed="-0.06">Placeholder text: describe your first experience, programme or award here. Add the organisation, the year and what the work involved. Replace this with your own details.</p>
+ </div>
+ <div class="row">
+  <div class="img" data-speed="0.08"><div class="card"><small>EXPERIENCE</small><b>Experience Two</b></div></div>
+  <p class="body" data-speed="-0.06">Placeholder text: describe your second experience, programme or award here. Add the organisation, the year and what the work involved. Replace this with your own details.</p>
+ </div>
+</section>
 <script>
 (function(){
  var strip=document.querySelector('.strip'),text=document.querySelector('.text'),photo=document.querySelector('.photo'),
  about=document.querySelector('.about'),at=about.querySelector('.atext'),ap=about.querySelector('.apic'),
  hh=document.querySelector('header').offsetHeight,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,tick=false;
+
+ var px=[].slice.call(document.querySelectorAll('[data-speed]')),sp=document.querySelector('.story .pic'),sb=document.querySelector('.sbody'),st=document.querySelector('.story');
+ function layers(){
+  if(reduce)return;var vh=innerHeight;
+  px.forEach(function(el){var r=el.parentNode.getBoundingClientRect(),d=r.top+r.height/2-vh/2;el.style.transform='translateY('+(d*parseFloat(el.dataset.speed))+'px)'});
+  var r2=st.getBoundingClientRect(),d2=r2.top+r2.height/2-vh/2;
+  sp.style.transform='translateY('+(d2*0.1)+'px)';sb.style.transform='translateY('+(d2*-0.08)+'px)';
+ }
  function update(){
+  layers();
   var y=window.scrollY,vh=innerHeight;
   strip.style.top=hh+'px';
   if(!reduce){
