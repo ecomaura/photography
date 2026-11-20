@@ -60,6 +60,66 @@ nav a.on{color:var(--red)}
 .row .body{will-change:transform}
 .row .img,.story .pic,.story .sbody{will-change:transform}
 @media(max-width:900px){.story{grid-template-columns:1fr;padding:120px 20px 48px 24px;gap:32px}.story .pic{height:50vh}.exp{padding:80px 20px 80px 24px}.row{grid-template-columns:1fr;gap:48px;margin-bottom:96px}.card{right:0;left:12%}}
+
+.reel{position:relative;z-index:2;margin-left:44px;min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;padding:120px 40px;overflow:hidden;background:#2f4a4f}
+.reel-bg{position:absolute;inset:-15% 0;background:url(reel.jpg) center/cover,linear-gradient(180deg,#2c4146 0,#4b6a6d 45%,#1f2f33 100%);z-index:-1;will-change:transform}
+.reel::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.25);z-index:-1}
+.reel small{font-family:'Questrial',sans-serif;font-size:clamp(15px,1.3vw,21px);margin-bottom:36px}
+.reel h2{font-family:'Jost',sans-serif;font-weight:200;font-size:clamp(34px,5.4vw,88px);line-height:1.15;max-width:1300px}
+.play{margin-top:56px;display:inline-flex;align-items:center;gap:16px;color:#fff;background:none;border:0;cursor:pointer;font-family:'Questrial',sans-serif;font-size:clamp(16px,1.3vw,21px)}
+.play i{width:56px;height:56px;border:3px solid #fff;border-radius:50%;display:grid;place-items:center}
+.play i::before{content:"";border-left:16px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px}
+.play span{border-bottom:2px solid #fff;padding-bottom:2px}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:50;display:none;align-items:center;justify-content:center}
+.lightbox.open{display:flex}
+.lightbox iframe{width:min(90vw,1100px);aspect-ratio:16/9;border:0}
+.lightbox button{position:absolute;top:20px;right:28px;background:none;border:0;color:#fff;font-size:40px;cursor:pointer}
+.gal{position:relative;z-index:2;margin-left:44px;background:#fff;color:#222;padding:120px 0 40px}
+.gal-title{padding:0 80px 24px 100px}
+.gal-title small{display:block;font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(28px,4vw,64px);color:var(--red);line-height:1;margin-bottom:-.12em}
+.gal-title h2{font-family:'Jost',sans-serif;font-weight:200;font-size:clamp(70px,12vw,200px);line-height:1;letter-spacing:-3px;color:#333}
+.block{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:48px;padding:40px 0 40px 100px;align-items:start}
+.block.flip{grid-template-columns:420px minmax(0,1fr);background:#fafafa;padding:60px 0 60px 0}
+.block.flip .lab{text-align:right;align-self:center;padding-right:24px}
+.block.flip .lab span{color:#222}
+.block.flip .lab b{color:var(--red)}
+.lab{align-self:center}
+.lab span{display:block;font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(30px,3.2vw,52px)}
+.lab b{display:block;font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(46px,5.4vw,92px);line-height:1.1;color:var(--red)}
+.bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;padding-right:48px;font-family:'Jost',sans-serif;font-size:20px}
+.bar span::before{content:"\22EE";font-weight:700;margin-right:20px}
+.bar select{border:0;background:none;font:inherit;color:#888;cursor:pointer}
+.track-wrap{position:relative}
+.track{display:flex;gap:40px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-right:40px}
+.track::-webkit-scrollbar{display:none}
+.vcard{flex:0 0 min(432px,78vw);scroll-snap-align:start}
+.vcard[hidden]{display:none}
+.thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#3b3a40,#6a5a5a 55%,#2a2a30);display:block;width:100%;border:0;cursor:pointer}
+.thumb i{position:absolute;left:50%;top:50%;width:54px;height:54px;margin:-27px 0 0 -27px;border:3px solid var(--red);border-radius:50%}
+.thumb i::before{content:"";position:absolute;left:19px;top:13px;border-left:16px solid var(--red);border-top:10px solid transparent;border-bottom:10px solid transparent}
+.thumb em{position:absolute;right:12px;bottom:8px;color:var(--red);font-style:normal;font-family:'Questrial',sans-serif;font-size:15px}
+.vcard h3{font-family:'Jost',sans-serif;font-weight:400;font-size:20px;margin:36px 0 18px;line-height:1.25}
+.vcard p{font-family:'Questrial',sans-serif;color:#666;font-size:15px;line-height:1.7}
+.next{position:absolute;right:-30px;top:110px;width:40px;height:60px;border:0;background:none;cursor:pointer;z-index:2}
+.next::before{content:"";position:absolute;left:6px;top:14px;width:24px;height:24px;border-top:2px solid #444;border-right:2px solid #444;transform:rotate(45deg)}
+.contact{position:relative;z-index:2;margin-left:44px;background:#929292;color:#fff;padding:90px 100px 100px;display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.contact .ttl{font-family:'Jost',sans-serif;font-weight:200;font-size:clamp(28px,3vw,48px);letter-spacing:.3em;display:flex;align-items:center;gap:36px}
+.contact .ttl::before{content:"";width:28px;height:18px;background:var(--red);transform:skewX(-20deg)}
+.contact h2{font-family:'Jost',sans-serif;font-weight:200;font-size:clamp(46px,5.2vw,88px);margin:56px 0 72px;line-height:1}
+.contact .lead{font-family:'Questrial',sans-serif;font-size:clamp(17px,1.6vw,24px);color:#e6e6e6}
+form{max-width:430px}
+form input[type=text],form input[type=email],form input[type=tel]{display:block;width:100%;background:none;border:0;border-bottom:1px solid #fff;color:#fff;font:inherit;font-family:'Questrial',sans-serif;font-size:18px;padding:26px 14px 14px;outline-offset:4px}
+form ::placeholder{color:#fff;opacity:1}
+form fieldset{border:0;margin-top:36px}
+form legend{font-family:'Jost',sans-serif;font-weight:300;font-size:26px;margin-bottom:12px}
+form label{display:flex;align-items:center;gap:16px;font-family:'Questrial',sans-serif;font-size:18px;margin:8px 0;cursor:pointer}
+form label input{appearance:none;width:24px;height:24px;border:1px solid #fff;background:none;margin:0;cursor:pointer}
+form label input:checked{background:var(--red)}
+form button{margin-top:36px;background:var(--red);color:#fff;border:0;padding:14px 40px;font-family:'Jost',sans-serif;font-size:20px;cursor:pointer}
+.note{margin-top:16px;font-family:'Questrial',sans-serif}
+.card.award{background:#000;border:1px solid #333}
+.row.rev{grid-template-columns:1fr minmax(240px,320px)}.row.rev .img{order:2}
+@media(max-width:900px){.gal-title,.contact{padding-left:24px;padding-right:24px}.block,.block.flip{grid-template-columns:1fr;padding:32px 0 32px 24px}.block.flip{padding-left:24px}.lab,.block.flip .lab{order:-1;text-align:left;padding:0}.contact{grid-template-columns:1fr;gap:40px}.row.rev{grid-template-columns:1fr}.row.rev .img{order:0}.next{display:none}.bar{padding-right:24px}}
 </style>
 </head>
 <body>
@@ -101,6 +161,8 @@ nav a.on{color:var(--red)}
 <section class="exp" id="experience">
  <p class="kicker">Experience</p>
  <h2>Awards and Accolades</h2>
+ <div class="row"><div class="img" data-speed="0.08"><div class="card award"><small>AWARD</small><b>Award One</b></div></div><p class="body" data-speed="-0.06">Placeholder text: describe this award, the year and what it recognised. Replace this with your own details.</p></div>
+ <div class="row rev"><div class="img" data-speed="0.08"><div class="card award"><small>AWARD</small><b>Award Two</b></div></div><p class="body" data-speed="-0.06">Placeholder text: describe this award, the year and what it recognised. Replace this with your own details.</p></div>
  <div class="row">
   <div class="img" data-speed="0.08"><div class="card"><small>EXPERIENCE</small><b>Experience One</b></div></div>
   <p class="body" data-speed="-0.06">Placeholder text: describe your first experience, programme or award here. Add the organisation, the year and what the work involved. Replace this with your own details.</p>
@@ -110,6 +172,41 @@ nav a.on{color:var(--red)}
   <p class="body" data-speed="-0.06">Placeholder text: describe your second experience, programme or award here. Add the organisation, the year and what the work involved. Replace this with your own details.</p>
  </div>
 </section>
+<section class="reel" id="showreel">
+ <div class="reel-bg" data-speed="0.1"></div>
+ <small>Jayantha Sinha</small>
+ <h2>Cinematography Showreel – Jayantha Sinha</h2>
+ <button class="play" data-video=""><i></i><span>Play Video</span></button>
+</section>
+<section class="gal" id="gallery">
+ <div class="gal-title"><small>Video</small><h2>Gallery</h2></div>
+ <div class="block">
+  <div><div class="bar"><span>Short Films</span><select aria-label="Filter by category"><option value="">All Categories</option><option>Trailers</option><option>Full Films</option></select></div>
+  <div class="track-wrap"><div class="track"><article class="vcard" data-cat="Full Films"><button class="thumb" data-video="" aria-label="Play Short film title one"><i></i><em>30:22</em></button><h3>Short film title one</h3><p>Replace this with a short description of the film, your role and the year.</p></article><article class="vcard" data-cat="Trailers"><button class="thumb" data-video="" aria-label="Play Short film title two"><i></i><em>01:00</em></button><h3>Short film title two</h3><p>Replace this with a short description of the film, your role and the year.</p></article><article class="vcard" data-cat="Full Films"><button class="thumb" data-video="" aria-label="Play Short film title three"><i></i><em>12:45</em></button><h3>Short film title three</h3><p>Replace this with a short description of the film, your role and the year.</p></article></div><button class="next" aria-label="Next"></button></div></div>
+  <div class="lab"><span>Short</span><b>Films</b></div>
+ </div>
+ <div class="block flip">
+  <div class="lab"><span>Feature Films</span><b>Web Series</b></div>
+  <div style="padding-right:0"><div class="bar"><span>Feature Films &amp; Web Series</span><select aria-label="Filter by category"><option value="">All Categories</option><option>Trailers</option><option>Full Films</option></select></div>
+  <div class="track-wrap"><div class="track"><article class="vcard" data-cat="Trailers"><button class="thumb" data-video="" aria-label="Play Feature film title one | Official Trailer"><i></i><em>02:42</em></button><h3>Feature film title one | Official Trailer</h3><p>Replace this with a short description of the project, your role and where to watch it.</p></article><article class="vcard" data-cat="Trailers"><button class="thumb" data-video="" aria-label="Play Web series title | Part 2"><i></i><em>01:26</em></button><h3>Web series title | Part 2</h3><p>Replace this with a short description of the project, your role and where to watch it.</p></article><article class="vcard" data-cat="Full Films"><button class="thumb" data-video="" aria-label="Play Feature film title two"><i></i><em>04:10</em></button><h3>Feature film title two</h3><p>Replace this with a short description of the project, your role and where to watch it.</p></article></div><button class="next" aria-label="Next" style="right:10px"></button></div></div>
+ </div>
+</section>
+<footer class="contact" id="contact">
+ <div><p class="ttl">Contact</p><h2>Reach out</h2><p class="lead">Drop me a message and I will get back to you.</p></div>
+ <form id="cf">
+  <input type="text" name="name" placeholder="Name" aria-label="Name" required>
+  <input type="email" name="email" placeholder="Email" aria-label="Email" required>
+  <input type="tel" name="phone" placeholder="Phone" aria-label="Phone">
+  <fieldset><legend>What would you like to talk about?</legend>
+   <label><input type="checkbox" name="topic" value="Short Films">Short Films</label>
+   <label><input type="checkbox" name="topic" value="Feature Films">Feature Films</label>
+   <label><input type="checkbox" name="topic" value="Music Videos">Music Videos</label>
+   <label><input type="checkbox" name="topic" value="Indie Work">Indie Work</label>
+  </fieldset>
+  <button type="submit">Send message</button><p class="note" id="note" role="status"></p>
+ </form>
+</footer>
+<div class="lightbox" id="lb"><button aria-label="Close">&times;</button></div>
 <script>
 (function(){
  var strip=document.querySelector('.strip'),text=document.querySelector('.text'),photo=document.querySelector('.photo'),
@@ -140,6 +237,21 @@ nav a.on{color:var(--red)}
  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(update)}},{passive:true});
  addEventListener('resize',function(){hh=document.querySelector('header').offsetHeight;update()});
  update();
+})();
+
+(function(){
+ var MAIL='your-email@example.com',lb=document.getElementById('lb');
+ function open(u){if(!u)return;var f=document.createElement('iframe');f.src=u;f.allow='autoplay;fullscreen';lb.appendChild(f);lb.classList.add('open')}
+ function close(){lb.classList.remove('open');var f=lb.querySelector('iframe');if(f)f.remove()}
+ document.addEventListener('click',function(e){var b=e.target.closest('[data-video]');if(b)open(b.dataset.video);if(e.target.closest('#lb button')||e.target===lb)close();
+  var n=e.target.closest('.next');if(n){var t=n.parentNode.querySelector('.track');t.scrollBy({left:t.clientWidth*.8,behavior:'smooth'})}});
+ addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+ [].forEach.call(document.querySelectorAll('.bar select'),function(sel){sel.addEventListener('change',function(){
+  var c=sel.value;[].forEach.call(sel.closest('.block').querySelectorAll('.vcard'),function(v){v.hidden=!!c&&v.dataset.cat!==c})})});
+ document.getElementById('cf').addEventListener('submit',function(e){e.preventDefault();var f=e.target,t=[].map.call(f.querySelectorAll('[name=topic]:checked'),function(i){return i.value}).join(', ');
+  var body='Name: '+f.name.value+'\nEmail: '+f.email.value+'\nPhone: '+f.phone.value+'\nTopics: '+t;
+  location.href='mailto:'+MAIL+'?subject='+encodeURIComponent('Website enquiry')+'&body='+encodeURIComponent(body);
+  document.getElementById('note').textContent='Opening your email app to send the message.'});
 })();
 </script>
 </body>
